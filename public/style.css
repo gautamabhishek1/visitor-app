@@ -1,0 +1,70 @@
+body { 
+    background: url(https://media.istockphoto.com/photos/abstract-blurred-office-interior-background-picture-id1313115119?b=1&k=20&m=1313115119&s=170667a&w=0&h=E4WPdhmRrjCcQHXszYhhfg1nOMHD7vGtpL4usT9KOwM=) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.title {
+    text-align: center;
+    font-size: 2.7rem; 
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: rgb(47, 13, 139);
+    border-bottom: 3px solid rgb(47, 13, 139);
+}
+
+.list-title {
+    font-weight: 500;
+    color: rgb(47, 13, 139);
+    border-bottom: 3px solid rgb(47, 13, 139);
+}
+.home {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.mainBtn {
+    width: 50vw;
+    display: block;
+}
+
+.submitBtn {
+    width: 50%;
+}
+
+.visitor_card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(104, 104, 104);
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+.items {
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 30%;
+}
+
+.visitor_card:hover {
+    cursor: pointer;
+}
+
+.date {
+    font-size: 2.5rem;
+}
+
+.time {
+    font-size: 2rem;
+}
+
+.dt {
+    width: 100vw;
+    text-align: center;
+}

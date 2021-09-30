@@ -1,0 +1,29 @@
+<%- include('./partials/header') %>
+
+
+<main class="container">
+    <div class="display-5 mt-3 mb-3 list-title">Visitors list</div>
+    <a href="/visitors/new/" class="new btn btn-info position-absolute top-0 end-0 translate-middle mt-5">Add New Visitor</a>
+    <div class="row mx-auto">
+        <% for(let visitor of visitors){ %> 
+        <div class="col-lg-12">
+            <div class="visitor_card mt-4"> 
+                <h3 class="d-inline-block items"><%= visitor.firstname %> <%= visitor.lastname %></h3>
+                <p class="d-inline-block items"><strong>Phone:</strong> <%=visitor.phone%></p>
+                <p class="d-inline-block items"><strong>Email: </strong> <%=visitor.email%></p>
+                <p class="items mb-1 status">Status:
+                    <% if(visitor.check=='in') { %>
+                        <b>Checked-In</b>
+                        <% } else { %>
+                        <b>Checked-Out</b>
+                    <% } %>       
+                </p>
+                <span class="dt ms-2"><b>At:</b> <%= visitor.updatedAt %></span>
+            </div>
+            <a href="/visitors/<%= visitor._id %>/update" class="btn btn-warning edit_button">Update Status</a>
+        </div>
+        <% } %> 
+    </div>
+</main>
+
+<%- include('./partials/footer') %>

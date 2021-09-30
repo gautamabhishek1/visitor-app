@@ -1,0 +1,23 @@
+{
+  "name": "assgn8-visitorapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Abhishek Gautam",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.7",
+    "nodemon": "^2.0.12",
+    "twilio": "^3.68.0"
+  }
+}

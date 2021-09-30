@@ -1,0 +1,39 @@
+<%- include('./partials/header.ejs') %> 
+
+    <div class="title">Update Visitor Status</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form action="/visitors/<%= visitor._id %>?_method=PATCH" method="POST">
+                    <div class="mt-3">
+                        <label for="formGroupExampleInput" class="form-label">First Name</label>
+                        <input type="text" name="firstname" class="form-control"  placeholder="Enter firstname" value="<%= visitor.firstname %> " readonly>
+                      </div>
+                      <div class="mt-3">
+                        <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                        <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" value="<%= visitor.lastname %>" readonly>
+                      </div>
+                      <div class="mt-3">
+                        <label for="formGroupExampleInput2" class="form-label">Phone</label>
+                        <input type="tel" name="phone" class="form-control" placeholder="+91" minlength='10' maxlength='10' value="<%= visitor.phone %>" readonly>
+                      </div>
+                      <div class="mt-3">
+                        <label for="formGroupExampleInput" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="abc@example.com" value="<%= visitor.email %>" readonly>
+                      </div>
+                      
+                      <div class="form-check form-check-inline mt-3">
+                        <input class="form-check-input" type="radio" name="check" value="in" checked>
+                        <label class="form-check-label" for="inlineRadio1" name="check" checked="checked">Checked-In</label>
+                      </div>
+                      <div class="form-check form-check-inline mt-3">
+                        <input class="form-check-input" type="radio" name="check" value="out">
+                        <label class="form-check-label" for="inlineRadio2" name="check">Checked-Out</label>
+                      </div>
+                      <button class="d-block btn btn-success mt-4 submitBtn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<%- include('./partials/footer.ejs') %> 
