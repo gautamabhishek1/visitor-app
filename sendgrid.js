@@ -11,7 +11,7 @@ const msg1 = {
   }, 
   subject: 'Greetings of the day!',
   text: `Hey ${name},You just have checked ${check} to the premises`,
-  html: `<h2>Hey ${name},</h2> <h3>You just have checked ${check} to the premises.</h3>`,
+  html: `<h2>Hey ${name},</h2> <h3>You just have checked ${check} to the premises.</h3><p>We hope you enjoy your visit. Have a nice day!<br>Regards</p>`,
 }
 
 const msg2 = {
@@ -22,7 +22,7 @@ const msg2 = {
   }, 
   subject: 'Greetings of the day!',
   text: `Hey ${name},You just have checked ${check} the premises. Thanks for visiting. Have a nice day!`,
-  html: `<h2>Hey ${name},</h2> <h3>You just have checked ${check} the premises.</h3><p>Thanks for visiting. Have a nice day!</p>`,
+  html: `<h2>Hey ${name},</h2> <h3>You just have checked ${check} the premises.</h3><p>Thanks for visiting. Have a nice day!<br>Regards</p>`,
 }
 
 let msg;
