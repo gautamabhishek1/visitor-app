@@ -46,6 +46,21 @@ body {
     background-color: rgba(204, 204, 204, 0.5);
 }
 
+.details {
+    margin: 50px auto;
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(104, 104, 104);
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
 .items {
     margin-right: 20px;
     margin-left: 10px;
@@ -67,4 +82,9 @@ body {
 .dt {
     width: 100vw;
     text-align: center;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
 }

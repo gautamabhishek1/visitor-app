@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %> 
+
+<div class="title">Visitor Details</div>
+    <section class="details">
+        <div class="name"><strong>Name of the visitor: </strong><%= visitor.firstname %> <%= visitor.lastname %></div>
+        <p class="items"><strong>Phone:</strong> <%=visitor.phone%></p>
+        <p class="items"><strong>Email: </strong> <%=visitor.email%></p>
+        <div><u>Status Details:</u> 
+            <p><strong>Checked-In at: </strong><%= visitor.createdAt %> </p>
+            <% if(visitor.check=='out'){ %> 
+            <p><strong>Checked-Out at: </strong><%= visitor.updatedAt %> </p>
+            <% } %> 
+        </div>
+
+    </section>
+
+<%- include('./partials/footer.ejs') %> 

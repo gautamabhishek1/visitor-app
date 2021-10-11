@@ -70,6 +70,12 @@ app.patch('/visitors/:id', async(req,res)=>{
     res.redirect('/visitors');
 })
 
+app.get('/visitor/:id', async(req,res)=>{
+    const { id } = req.params;
+    const visitor = await Visitor.findById(id);
+
+    res.render('show',{visitor});
+})
 
 
 app.listen(process.env.PORT || 3000,()=>{
