@@ -39,6 +39,10 @@ body {
     width: 50%;
 }
 
+.backBtn {
+    width: 30%;
+}
+
 .visitor_card {
     border: 1px solid #ccc;
     border-radius: 5px;
