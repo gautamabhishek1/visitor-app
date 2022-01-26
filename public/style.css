@@ -49,6 +49,14 @@ body {
     width: 30%;
 }
 
+.addNew {
+    position:absolute;
+    top: 20px;
+    right: 40px;
+    background-color: #1958a0;
+    color: #ccc;
+  }
+
 .visitor_card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -97,4 +105,17 @@ body {
 a, a:hover {
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width:470px) {
+    .home, .date {
+        font-size: 2rem;
+    }
+  
+}
+
+@media only screen and (max-width:650px) {
+    .addNew {
+        font-size: 12px;
+    }
 }
